@@ -1,0 +1,101 @@
+title {
+    font-size: 24px;
+    margin: 10px;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  #header {
+    background-color: #eaecf0;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  #content {
+    display: flex;
+    max-width: 95%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  #navbar {
+    background-color: #333;
+    width: 12%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+  }
+  #paragraphs {
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 10px;
+    margin-right: 10px;
+  } 
+  #texto {
+    flex-direction: column;
+    align-items: left;
+    text-align: justify;
+  }
+  #texto-historia {
+    flex-direction: column;
+    align-items: left;
+    text-align: justify;
+  }
+  #texto-ciencia {
+    flex-direction: column;
+    align-items: left;
+    text-align: justify;
+  }
+  #navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  #vertical-bar {
+    width: 15%;
+    height: 90%;
+    float: right;
+    margin-right: auto;
+}
+  #vertical-container {
+    width: 15%;
+    float: right;
+    margin-left: auto;
+}
+  ul {
+    padding: 5px 10px;
+    width: 95%;
+  }
+  h1 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .citation {
+    color: #888;
+    font-style: italic;
+  }
+  #footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #eaecf0;
+  }
+  
