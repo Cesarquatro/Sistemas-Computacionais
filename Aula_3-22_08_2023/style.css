@@ -1,0 +1,112 @@
+title {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 10;
+    
+  }
+
+  #formulario {
+    width: auto;
+    height: 692px;
+    display: flex; /* Usar flex para centralizar vertical e horizontalmente */
+    flex-direction: column;
+    justify-content: center; /* Centralizar verticalmente */
+    align-items: left; /* Centralizar horizontalmente */
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=tel], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+#vertical-container-esquerda {
+    width: 50%;
+    height: 692px;
+    float: left;
+    background-color: #1fbaf251;
+    position: relative;
+    display: flex; /* Usar flex para centralizar vertical e horizontalmente */
+    /*centralize horizontalmente*/
+    justify-content: center;
+    place-items: center;
+    vertical-align: middle;
+    margin-right:10
+}
+#vertical-container-esquerda img{
+  
+  float: center;
+  position: relative;
+  place-items: center;
+  vertical-align: middle;
+  margin-right:10
+}
+#vertical-container-direita{
+  width: 50%;
+  height: 692px;
+  float: left;
+  text-align: left;
+  justify-content: left;
+  position: relative;
+  place-items: center;
+  vertical-align: middle;
+  background-color: #ffffff;
+  margin-right:10
+}
