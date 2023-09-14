@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="myscript.js" defer></script>
+        
+        <title>OnlyGit</title>
+        </head>
+
+
+        <body>
+        <div id="vertical-container-esquerda">
+            <img width="90%" src="src\OnlyGit.png" alt="Foto_formal_pb" >
+        </div>
+        <div id="vertical-container-direita">
+            <div id="formulario">
+                <form action="processar.php" method="GET">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome..."><br>
+
+                    <label for="nome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome..."><br>
+        
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" placeholder="Idade..."><br> 
+        
+                    <button type="submit">Enviar (GET)</button>
+                </form>
+                <br>
+                <form action="processar.php" method="POST">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu email..."><br>
+        
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX)XXX-XXX-XXX"><br>
+
+                    <label for="pass">Senha:</label>
+                    
+                    <input type="password" id="pass" name="pass" placeholder="Senha..." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Deve conter pelo menos um número e uma letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres."><br>
+                    <!-- An element to toggle between password visibility -->
+                    <input type="checkbox" onclick="myFunction()">Mostrar senha<br>
+                  
+                    <button type="submit">Enviar (POST)</button> 
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="feed" id="feed">
+            <img id="pic1" src="https://photoipsum.com/city">
+            <img id="pic2" src="https://photoipsum.com/beach">
+            <img id="pic3" src="https://photoipsum.com/office">
+            <img id="pic4" src="https://photoipsum.com/person">
+            <img id="pic5" src="https://photoipsum.com/food">
+            <img id="pic6" src="https://photoipsum.com/code">
+        </div>
+        </body>
+    </html>
+    
