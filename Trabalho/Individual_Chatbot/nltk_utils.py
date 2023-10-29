@@ -36,9 +36,9 @@ print(a)
 words = ["organize", "organizes", "organizing"]
 print(words)
 stemmed_words = [stem(w) for w in words]
-print(stemmed_words)'''
+print(stemmed_words)
 
 sentence =  ["hello", "how", "are", "you"]
 all_words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
 bag =   bag_of_words(sentence, all_words)
-print(bag)
+print(bag)'''
