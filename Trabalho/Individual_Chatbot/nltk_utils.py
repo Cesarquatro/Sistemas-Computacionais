@@ -19,9 +19,9 @@ def bag_of_words(tokenized_sentence, all_words):
 a = "How long does shipping take?"
 print(a)
 a = tokenize(a)
-print(a)'''
+print(a)
 
 words = ["organize", "organizes", "organizing"]
 print(words)
 stemmed_words = [stem(w) for w in words]
-print(stemmed_words)
+print(stemmed_words)'''
