@@ -1,84 +1,317 @@
 {
-    "intents": [
+  "intents": [
       {
-        "tag": "greeting",
+          "tag": "saudação",
+          "patterns": [
+              "Oi",
+              "Olá",
+              "Como você está",
+              "Tem alguém aí?",
+              "Olá",
+              "Bom dia"
+          ],
+          "responses": [
+              "Oi :-)",
+              "Olá, obrigado por visitar",
+              "Oi, no que posso te ajudar?",
+              "Oi, como posso ajudar?",
+              "Saudações"
+          ]
+      },
+      {
+          "tag": "despedida",
+          "patterns": ["Tchau", "Até mais tarde", "Adeus"],
+          "responses": [
+              "Até mais tarde, obrigado por visitar",
+              "Tenha um bom dia",
+              "Tchau! Volte em breve."
+          ]
+      },
+      {
+          "tag": "agradecimento",
+          "patterns": ["Obrigado", "Obrigado", "Isso é útil", "Muito obrigado!"],
+          "responses": ["Feliz em ajudar!", "A qualquer momento!", "É um prazer"]
+      },
+      {
+          "tag": "itens",
+          "patterns": [
+              "Quais itens você tem?",
+              "Que tipos de itens existem?",
+              "O que você vende?"
+          ],
+          "responses": [
+              "Nós vendemos café e chá",
+              "Nós temos café e chá"
+          ]
+      },
+      {
+          "tag": "pagamentos",
+          "patterns": [
+              "Aceitam cartões de crédito?",
+              "Aceitam Mastercard?",
+              "Posso pagar com Paypal?",
+              "Vocês só aceitam dinheiro?"
+          ],
+          "responses": [
+              "Aceitamos VISA, Mastercard e Paypal",
+              "Aceitamos a maioria dos principais cartões de crédito e Paypal"
+          ]
+      },
+      {
+          "tag": "entrega",
+          "patterns": [
+              "Quanto tempo demora a entrega?",
+              "Quanto tempo demora o envio?",
+              "Quando receberei minha entrega?"
+          ],
+          "responses": [
+              "A entrega leva de 2 a 4 dias",
+              "O envio leva de 2 a 4 dias"
+          ]
+      },
+      {
+          "tag": "engraçado",
+          "patterns": [
+              "Conte-me uma piada!",
+              "Diga-me algo engraçado!",
+              "Você conhece uma piada?"
+          ],
+          "responses": [
+              "Por que o hipster queimou a boca? Ele tomou o café antes de esfriar.",
+              "O que o búfalo disse quando seu filho foi para a faculdade? Bison (soa como 'bison', que significa bisonte em inglês)."
+          ]
+      },
+      {
+          "tag": "nome",
+          "patterns": [
+              "Quem é você?",
+              "Qual é o seu nome?",
+              "Como posso te chamar?"
+          ],
+          "responses": [
+              "Eu sou o Coelho Branco",
+              "Meu nome é Coelho Branco",
+              "Você pode me chamar de Coelho Branco",
+              "Coelhinho branco é meu apelido",
+              "Eu sou o White Rabbit",
+              "Meu nome é White Rabbit",
+              "Você pode me chamar de White Rabbit",
+              "White bunny é meu apelido"
+          ]
+      },
+      {
+          "tag": "nome",
+          "patterns": [
+              "Quem é você?",
+              "Qual é o seu nome?",
+              "Como posso te chamar?"
+          ],
+          "responses": [
+              "Eu sou o Coelho Branco",
+              "Meu nome é Coelho Branco",
+              "Você pode me chamar de Coelho Branco",
+              "Coelhinho branco é meu apelido",
+              "Eu sou o White Rabbit",
+              "Meu nome é White Rabbit",
+              "Você pode me chamar de White Rabbit",
+              "White bunny é meu apelido"
+          ]
+      },
+      {
+        "tag": "personagens_marvel",
         "patterns": [
-          "Hi",
-          "Hey",
-          "How are you",
-          "Is anyone there?",
-          "Hello",
-          "Good day"
+            "Quem são os principais personagens da Marvel?",
+            "Me fale sobre os super-heróis da Marvel",
+            "Quem são os X-Men?"
         ],
         "responses": [
-          "Hey :-)",
-          "Hello, thanks for visiting",
-          "Hi there, what can I do for you?",
-          "Hi there, how can I help?"
+            "A Marvel tem uma grande variedade de super-heróis icônicos, incluindo Homem de Ferro, Capitão América, Thor, Hulk, Viúva Negra, Gavião Arqueiro, entre outros.",
+            "Os X-Men são uma equipe de mutantes da Marvel, liderada pelo Professor Xavier, que lutam para proteger um mundo que os teme e os odeia."
         ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
-        "responses": [
-          "See you later, thanks for visiting",
-          "Have a nice day",
-          "Bye! Come back again soon."
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure"]
-      },
-      {
-        "tag": "items",
+    },
+    {
+        "tag": "curiosidades_marvel",
         "patterns": [
-          "Which items do you have?",
-          "What kinds of items are there?",
-          "What do you sell?"
+            "Você tem alguma curiosidade interessante sobre a Marvel?",
+            "Conte-me uma curiosidade sobre os filmes da Marvel",
+            "Qual foi o primeiro filme do universo cinematográfico da Marvel?"
         ],
         "responses": [
-          "We sell coffee and tea",
-          "We have coffee and tea"
+            "Uma curiosidade interessante é que Stan Lee, o lendário co-criador de muitos personagens da Marvel, fazia participações especiais em quase todos os filmes do MCU até o seu falecimento em 2018.",
+            "O primeiro filme do universo cinematográfico da Marvel foi 'Homem de Ferro', lançado em 2008."
         ]
-      },
-      {
-        "tag": "payments",
+    },
+    {
+        "tag": "datas_lancamento_marvel",
         "patterns": [
-          "Do you take credit cards?",
-          "Do you accept Mastercard?",
-          "Can I pay with Paypal?",
-          "Are you cash only?"
+            "Quando foi lançado o filme dos Vingadores?",
+            "Quando estreou o primeiro filme do Homem-Aranha no MCU?",
+            "Quais são os próximos lançamentos da Marvel?"
         ],
         "responses": [
-          "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal"
+            "O filme 'Os Vingadores' foi lançado em 2012.",
+            "O primeiro filme do Homem-Aranha no MCU foi 'Homem-Aranha: De Volta ao Lar', lançado em 2017.",
+            "Para saber os próximos lançamentos da Marvel, recomendo verificar o site oficial da Marvel ou sites de cinema."
         ]
-      },
-      {
-        "tag": "delivery",
+    },
+    {
+        "tag": "viloes_marvel",
         "patterns": [
-          "How long does delivery take?",
-          "How long does shipping take?",
-          "When do I get my delivery?"
+            "Quem são alguns dos vilões mais conhecidos da Marvel?",
+            "Me fale sobre os antagonistas nos filmes da Marvel",
+            "Qual é o arqui-inimigo do Homem-Aranha?"
         ],
         "responses": [
-          "Delivery takes 2-4 days",
-          "Shipping takes 2-4 days"
+            "Alguns vilões notáveis da Marvel incluem Thanos, Loki, Duende Verde, Doutor Octopus e Magneto.",
+            "O arqui-inimigo do Homem-Aranha é o Duende Verde, também conhecido como Norman Osborn."
         ]
-      },
-      {
-        "tag": "funny",
+    },
+    {
+        "tag": "fase_marvel",
         "patterns": [
-          "Tell me a joke!",
-          "Tell me something funny!",
-          "Do you know a joke?"
+            "O que é a Fase 1/2/3/4 da Marvel?",
+            "Quantas fases existem no universo cinematográfico da Marvel?"
         ],
         "responses": [
-          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-          "What did the buffalo say when his son left for college? Bison."
+            "O universo cinematográfico da Marvel é dividido em fases, que representam diferentes etapas na narrativa e lançamentos dos filmes. Cada fase inclui um conjunto de filmes e contribui para a história global do MCU.",
+            "Até a minha última atualização em janeiro de 2022, havia quatro fases anunciadas oficialmente, mas é possível que haja mais fases planejadas no futuro."
         ]
-      }
+    },
+    {
+        "tag": "poderes_herois_marvel",
+        "patterns": [
+            "Quais são os poderes do Homem de Ferro?",
+            "Quais são os poderes da Capitã Marvel?"
+        ],
+        "responses": [
+            "O Homem de Ferro, também conhecido como Tony Stark, não possui superpoderes naturais, mas utiliza uma armadura tecnologicamente avançada que lhe concede superforça, voo, armas avançadas e muito mais.",
+            "A Capitã Marvel, também conhecida como Carol Danvers, possui superforça, voo, resistência a danos e a capacidade de manipular energia."
+        ]
+    },
+    {
+      "tag": "homem_aranha",
+      "patterns": [
+          "Quem é o Homem-Aranha?",
+          "Fale sobre Peter Parker",
+          "Qual é a história do Homem-Aranha?"
+      ],
+      "responses": [
+          "O Homem-Aranha é um super-herói da Marvel, cujo nome real é Peter Parker. Ele adquiriu habilidades de aranha após ser picado por uma aranha geneticamente modificada, incluindo agilidade aprimorada, força e a capacidade de escalar paredes.",
+          "Peter Parker, o Homem-Aranha, é conhecido por seu senso de responsabilidade e por ser um dos super-heróis mais queridos da Marvel."
+      ]
+  },
+  {
+    "tag": "gaviao_arqueiro",
+    "patterns": [
+        "Quem é o Gavião Arqueiro?",
+        "Fale sobre Clint Barton",
+        "Qual é a história do Gavião Arqueiro?"
+    ],
+    "responses": [
+        "O Gavião Arqueiro é um super-herói da Marvel, cujo nome real é Clint Barton. Ele é um mestre em arco e flecha, conhecido por sua precisão e habilidades de combate excepcionais.",
+        "O personagem Gavião Arqueiro é interpretado por Jeremy Renner nos filmes da Marvel."
     ]
-  }
+},
+{
+  "tag": "thor",
+  "patterns": [
+      "Quem é o Thor?",
+      "Fale sobre Thor, o deus do trovão",
+      "Qual é a história do Thor?"
+  ],
+  "responses": [
+      "Thor é um deus asgardiano e um super-herói da Marvel, conhecido como o deus do trovão. Ele empunha o martelo Mjolnir, que lhe confere poderes incríveis.",
+      "O personagem Thor é interpretado por Chris Hemsworth nos filmes da Marvel."
+  ]
+},
+{
+  "tag": "capitao_america",
+  "patterns": [
+      "Quem é o Capitão América?",
+      "Fale sobre Steve Rogers",
+      "Qual é a história do Capitão América?"
+  ],
+  "responses": [
+      "O Capitão América é um super-soldado da Marvel, cujo nome real é Steve Rogers. Ele recebeu um soro experimental que o transformou em um herói com força e habilidades sobre-humanas.",
+      "Steve Rogers, o Capitão América, é interpretado por Chris Evans nos filmes da Marvel."
+  ]
+},
+{
+  "tag": "hulk",
+  "patterns": [
+      "Quem é o Hulk?",
+      "Fale sobre Bruce Banner",
+      "Qual é a história do Hulk?"
+  ],
+  "responses": [
+      "O Hulk é um super-herói da Marvel, cujo nome real é Bruce Banner. Ele é um cientista que, após um acidente com radiação, adquire a capacidade de se transformar em uma criatura gigante de força inimaginável quando está com raiva.",
+      "Bruce Banner, o Hulk, é interpretado por diferentes atores nos filmes da Marvel, incluindo Edward Norton e Mark Ruffalo."
+  ]
+},
+{
+  "tag": "viuva_negra",
+  "patterns": [
+      "Quem é a Viúva Negra?",
+      "Fale sobre Natasha Romanoff",
+      "Qual é a história da Viúva Negra?"
+  ],
+  "responses": [
+      "A Viúva Negra é uma super-espiã e combatente altamente treinada da Marvel, cujo nome real é Natasha Romanoff. Ela é conhecida por suas habilidades de luta excepcionais e sua história complexa.",
+      "A personagem Viúva Negra é interpretada por Scarlett Johansson nos filmes da Marvel."
+  ]
+},
+{
+  "tag": "homem_de_ferro",
+  "patterns": [
+      "Quem é o Homem de Ferro?",
+      "Conte-me sobre Tony Stark",
+      "Qual é a história do Homem de Ferro?"
+  ],
+  "responses": [
+      "O Homem de Ferro é um super-herói da Marvel, cujo nome real é Tony Stark. Ele é um gênio inventor e bilionário que criou uma poderosa armadura que lhe confere habilidades incríveis.",
+      "Tony Stark, também conhecido como Homem de Ferro, é interpretado por Robert Downey Jr. nos filmes da Marvel."
+  ]
+},
+{
+  "tag": "nick_fury",
+  "patterns": [
+      "Quem é Nick Fury?",
+      "Fale sobre Nick Fury",
+      "Qual é a história de Nick Fury?"
+  ],
+  "responses": [
+      "Nick Fury é um personagem fictício da Marvel Comics e faz parte do universo cinematográfico da Marvel (MCU). Ele é o diretor da organização de espionagem internacional conhecida como S.H.I.E.L.D. e é interpretado por Samuel L. Jackson nos filmes da Marvel.",
+      "Nick Fury é conhecido por ser um estrategista brilhante e por sua liderança firme na luta contra ameaças super-humanas."
+  ]
+},
+{
+  "tag": "maria_hill",
+  "patterns": [
+      "Quem é Maria Hill?",
+      "Fale sobre Maria Hill",
+      "Qual é a história de Maria Hill?"
+  ],
+  "responses": [
+      "Maria Hill é um personagem da Marvel Comics e é membro da organização de espionagem S.H.I.E.L.D. Ela é conhecida por sua habilidade tática e liderança eficaz em situações de crise.",
+      "Maria Hill é interpretada por Cobie Smulders nos filmes da Marvel e é uma personagem muito respeitada dentro do universo cinematográfico da Marvel."
+  ]
+},
+{
+  "tag": "robin_scherbatsky",
+  "patterns": [
+      "Quem é Robin Scherbatsky?",
+      "Fale sobre Robin Scherbatsky",
+      "Qual é a história de Robin Scherbatsky?"
+  ],
+  "responses": [
+      "Robin Scherbatsky é um personagem fictício da série de TV 'How I Met Your Mother'. Ela é uma jornalista canadense que se muda para Nova York e se torna uma das personagens principais do show.",
+      "Robin é interpretada por Cobie Smulders e é conhecida por sua personalidade forte e sua complexa relação com os outros personagens na série.",
+      "Robin Scherbatsky é a Vingadora mais forte de todas. Em vingadores ultimato ela derrota o Thanos com um soco após voar até ele com seu poder de voar."
+    ]   
+}
+
+
+
+
+  ]
+}
