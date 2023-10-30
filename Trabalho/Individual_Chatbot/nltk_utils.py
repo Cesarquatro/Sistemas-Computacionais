@@ -1,6 +1,6 @@
 import nltk
 import numpy as np
-nltk.download('punkt')
+#nltk.download('punkt')
 
 # preprocessing techniques/utils
 from nltk.stem.porter import PorterStemmer
