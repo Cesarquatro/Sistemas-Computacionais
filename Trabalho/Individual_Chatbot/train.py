@@ -132,7 +132,7 @@ data = {
 "tags": tags
 }
 
-FILE = "data.pth"
+FILE = r"Trabalho\Individual_Chatbot\data.pth"
 torch.save(data, FILE)
 
 print(f'training complete. file saved to {FILE}')
